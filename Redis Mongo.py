@@ -4,17 +4,17 @@ import json
 import ast
 from bson import ObjectId
 
-client = pymongo.MongoClient("mongodb+srv://juliopm:07062004@teste.zxwczlg.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://juliopm:*******@teste.zxwczlg.mongodb.net/?retryWrites=true&w=majority")
 db = client.test
 
 global mydb
 mydb = client.Biblioteca
-# !Er07062004
+
 
 r = redis.Redis(
   host='redis-14788.c261.us-east-1-4.ec2.cloud.redislabs.com',
   port=14788,
-  password='ky13qMTPa5bEXOZH7dR391koVR6pqAf5')
+  password='')
 
 
 def findSortUser():

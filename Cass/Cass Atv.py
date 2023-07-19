@@ -4,7 +4,7 @@ from cassandra.auth import PlainTextAuthProvider
 cloud_config = {
     'secure_connect_bundle': './secure-connect-fatec.zip'
 }
-auth_provider = PlainTextAuthProvider('juliopm142@gmail.com', '!07062004Er')
+auth_provider = PlainTextAuthProvider('juliopm142@gmail.com', '****')
 cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
 session = cluster.connect()
 
